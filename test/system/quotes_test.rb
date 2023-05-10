@@ -1,6 +1,7 @@
 require "application_system_test_case"
 
 class QuotesTest < ApplicationSystemTestCase
+  
   setup do
     @quote = quotes(:first) # Reference to the first fixture quote
   end
@@ -55,5 +56,5 @@ class QuotesTest < ApplicationSystemTestCase
     click_on "Delete", match: :first
     assert_no_text @quote.name
   end
-  
+
 end
