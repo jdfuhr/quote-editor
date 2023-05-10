@@ -9,7 +9,7 @@ class QuotesTest < ApplicationSystemTestCase
   test "Creating a new quote" do
     # When we visit the Quotes#index page
     # we expect to see a title with the text "Quotes"
-    visit quotes_path
+    visit quotebin/rails db:seeds_path
     assert_selector "h1", text: "Quotes"
 
     # When we click on the link with the text "New quote"
